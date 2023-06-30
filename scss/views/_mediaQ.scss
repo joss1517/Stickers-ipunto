@@ -1,0 +1,135 @@
+@media (min-width: 769px) {
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+    color: map-get($paleta_de_colores, btn-red);
+  }
+
+  .hamb {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .bred {
+    grid-column: span 2;
+  }
+
+  .hoog {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 414px) {
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container-card {
+    display: inline-block;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .card-int img {
+    width: 200px;
+  }
+
+  .section {
+    padding: 30px;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .campo {
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+
+  .section-contenedor {
+    /* background-color: #004260; */
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  .article-text {
+    /* background-color: #1da1f2; */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
+
+  .article-text h2 {
+    text-align: center;
+    color: map-get($paleta_de_colores, btn-red);
+    text-shadow: 2px 4px 10px map-get($paleta_de_colores, negro);
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .article-text p {
+    /* align-items: flex-start; */
+    color: map-get($paleta_de_colores, text-card);
+    font-size: 1rem;
+    padding: 10px 40px;
+    text-align: center;
+  }
+
+  .car-container {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 17px;
+  }
+
+  .carousel-inner {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .contenedor-main {
+    /* background-color: #d3037c; */
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .container-card {
+    margin: 10px;
+  }
+
+  .card-int {
+    width: 200px;
+  }
+
+  .s-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

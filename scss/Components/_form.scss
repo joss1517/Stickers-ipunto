@@ -1,0 +1,14 @@
+.campo {
+  padding: 13px 10px;
+  background-color: #737373;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  margin: 0 5px 5px 0;
+  border: 0;
+
+  &::placeholder {
+    color: #fefbf8;
+    text-transform: capitalize;
+  }
+}
