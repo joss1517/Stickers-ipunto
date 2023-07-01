@@ -52,7 +52,7 @@
 }
 
 .container-card {
-  @include ancho(100%);
+  @include ancho(90%);
   height: 100%;
   display: flex;
   justify-content: center;

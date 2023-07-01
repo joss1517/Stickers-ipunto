@@ -1,6 +1,6 @@
 .d-block {
-  @include ancho(600px);
-  border-radius: 30px;
+  @include ancho(800px);
+  border-radius: 20px;
 }
 
 .article-text p {
@@ -14,7 +14,19 @@
 .article-text h2 {
   text-align: center;
   color: map-get($paleta_de_colores, btn-red);
-  text-shadow: 2px 4px 10px map-get($paleta_de_colores, negro);
   font-size: 3.5rem;
   padding: 20px;
+}
+
+.text-t {
+  color: map-get($paleta_de_colores, text-card);
+}
+
+.text-t-p {
+  color: map-get($paleta_de_colores, blanco);
+}
+
+.text-t-red {
+  color: map-get($paleta_de_colores, btn-red);
+  font-size: 3rem;
 }

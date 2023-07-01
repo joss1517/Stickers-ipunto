@@ -6,15 +6,19 @@
 }
 
 body {
-  background-image: url(../images/Universe-wallpaper-background-picture-Graphics-24689056-1.jpg);
+  background-image: url(../../images/Universe-wallpaper-background-picture-Graphics-24689056-1.jpg);
   background-repeat: repeat;
   background-size: 100vw;
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .d-block {
-  width: 600px;
-  border-radius: 30px;
+  width: 800px;
+  border-radius: 20px;
 }
 
 .article-text p {
@@ -28,9 +32,21 @@ body {
 .article-text h2 {
   text-align: center;
   color: #f50a3d;
-  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7058823529);
   font-size: 3.5rem;
   padding: 20px;
+}
+
+.text-t {
+  color: rgb(196, 237, 237);
+}
+
+.text-t-p {
+  color: #e2e2e2;
+}
+
+.text-t-red {
+  color: #f50a3d;
+  font-size: 3rem;
 }
 
 .header {
@@ -121,7 +137,7 @@ body {
   top: 0;
 }
 
-.container {
+.container-1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
@@ -233,6 +249,7 @@ body {
 
 main {
   width: 100%;
+  height: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,7 +311,7 @@ main {
 }
 
 .container-card {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -513,14 +530,14 @@ main {
     justify-content: center;
     margin: 20px;
   }
-  .contenedor-main {
-    /* background-color: #d3037c; */
-    margin-top: 0;
+  .text-t-red {
+    color: #f50a3d;
+    font-size: 2rem;
   }
 }
 @media (min-width: 320px) {
   .container-card {
-    margin: 10px;
+    margin-top: -20px;
   }
   .card-int {
     width: 200px;
@@ -536,17 +553,14 @@ main {
 }
 
 .icon {
-  position: relative;
+  position: sticky;
   width: 80px;
   height: 80px;
-  margin: 20px;
+  margin: 10px;
+  margin-top: -80px;
   border-radius: 50%;
   transition: all 0.8s;
   cursor: pointer;
-  /*  &:hover:nth-child(3) {
-    background-color: map-get($paleta_de_colores, what);
-    box-shadow: 0 0 20px map-get($paleta_de_colores, what);
-  } */
 }
 .icon:hover {
   background-color: #e60073;
@@ -555,6 +569,10 @@ main {
 .icon:hover:nth-child(2) {
   background-color: #1877f2;
   box-shadow: 0 0 20px #1877f2;
+}
+.icon:hover:nth-child(3) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366;
 }
 
 .icon i {
