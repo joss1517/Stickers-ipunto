@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../images/Universe-wallpaper-background-picture-Graphics-24689056-1.jpg);
+  background-image: url(../../images/Universe-wallpaper-background-picture-Graphics-24689056-1.jpg);
   background-repeat: repeat;
   background-size: 100vw;
   width: 100%;
@@ -311,7 +311,7 @@ main {
 }
 
 .container-card {
-  width: 90%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -338,12 +338,12 @@ main {
 }
 .card-int:hover {
   background-color: rgba(0, 0, 0, 0.55);
-  box-shadow: 0 0 25px #e60073;
+  box-shadow: 0 0 20px #900048;
   transform: translateY(-15px);
   size: 1.2;
 }
 .card-int img {
-  width: 70%;
+  width: 90%;
   height: 50%;
   padding-top: 10px;
   border-radius: 30px;
@@ -471,7 +471,6 @@ main {
   .container-card {
     display: inline-block;
     justify-content: center;
-    margin: 10px;
   }
   .card-int img {
     width: 200px;
@@ -536,9 +535,10 @@ main {
   }
 }
 @media (min-width: 320px) {
-  .container-card {
-    margin-top: -20px;
-  }
+  /*   .container-card {
+    margin-top: 20px;
+    margin-right: -15px;
+  } */
   .card-int {
     width: 200px;
   }
