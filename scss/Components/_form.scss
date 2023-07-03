@@ -1,14 +1,14 @@
 .campo {
   padding: 13px 10px;
-  background-color: map-get($paleta_de_colores, grey-shadow);
-  color: map-get($paleta_de_colores, blanco);
+  background-color: map-get($paleta_de_colores, blanco);
+  color: map-get($paleta_de_colores, gris);
   outline: none;
   font-size: 1rem;
   margin: 0 5px 5px 0;
   border: 0;
 
   &::placeholder {
-    color: #fefbf8;
+    color: map-get($paleta_de_colores, gris);
     text-transform: capitalize;
   }
 }

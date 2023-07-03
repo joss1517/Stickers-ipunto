@@ -13,7 +13,6 @@
 
 .article-text h2 {
   text-align: center;
-  /* color: map-get($paleta_de_colores, btn-red); */
   font-size: 3.5rem;
   padding: 20px;
 }
@@ -24,9 +23,4 @@
 
 .text-t-p {
   color: map-get($paleta_de_colores, text-card-2);
-}
-
-.text-t-red {
-  color: map-get($paleta_de_colores, btn-red);
-  font-size: 3rem;
 }
