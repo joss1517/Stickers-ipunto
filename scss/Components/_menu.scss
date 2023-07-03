@@ -1,7 +1,8 @@
 .menu {
   list-style: none;
   a:hover {
-    background-color: map-get($paleta_de_colores, fucsia);
+    background-color: map-get($paleta_de_colores, body-color);
+    @include ancho(100%);
   }
 }
 

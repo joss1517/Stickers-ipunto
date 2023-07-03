@@ -6,9 +6,7 @@
 }
 
 body {
-  background-image: url(../../images/Universe-wallpaper-background-picture-Graphics-24689056-1.jpg);
-  background-repeat: repeat;
-  background-size: 100vw;
+  background-color: rgba(42, 29, 42, 0.72);
   width: 100%;
 }
 
@@ -18,12 +16,12 @@ html {
 
 .d-block {
   width: 800px;
-  border-radius: 35px;
+  border-radius: 40px;
 }
 
 .article-text p {
-  color: rgb(196, 237, 237);
-  font-size: 1.3rem;
+  color: rgb(172, 246, 242);
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 5px 40px;
   text-align: center;
@@ -31,17 +29,17 @@ html {
 
 .article-text h2 {
   text-align: center;
-  color: #f50a3d;
+  /* color: map-get($paleta_de_colores, btn-red); */
   font-size: 3.5rem;
   padding: 20px;
 }
 
 .text-t {
-  color: rgb(196, 237, 237);
+  color: rgb(172, 246, 242);
 }
 
 .text-t-p {
-  color: #e2e2e2;
+  color: rgb(172, 246, 242);
 }
 
 .text-t-red {
@@ -51,7 +49,7 @@ html {
 
 .header {
   background-color: rgba(0, 0, 0, 0.7058823529);
-  box-shadow: 1px 1px 5px 0px #4b4a4a;
+  box-shadow: 1px 1px 5px 0px #565656;
   position: sticky;
   height: 70px;
   top: 0;
@@ -73,7 +71,8 @@ html {
   list-style: none;
 }
 .menu a:hover {
-  background-color: #d3037c;
+  background-color: rgba(42, 29, 42, 0.72);
+  width: 100%;
 }
 
 .logo img {
@@ -178,23 +177,12 @@ html {
   text-align: center;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  color: #8e9090;
+  width: 100%;
+  color: #0e111c;
   font-size: 3rem;
   letter-spacing: 1rem;
   padding: 12px 0;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.7058823529);
-}
-
-.prince {
-  background-color: rgba(112, 3, 88, 0.8);
-  color: #e2e2e2;
-  width: 100%;
-  padding: 2rem 2rem;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  /* text-shadow: 2px 2px map-get($paleta_de_colores, negro); */
 }
 
 .menu a {
@@ -206,7 +194,7 @@ html {
 
 .logo {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 6px;
 }
 
@@ -214,7 +202,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #004260; */
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
   background-size: contain;
@@ -276,8 +263,8 @@ main {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: rgba(112, 3, 88, 0.8);
-  color: rgb(196, 237, 237);
+  background-color: rgba(32, 0, 25, 0.841);
+  color: rgb(172, 246, 242);
   opacity: 0;
   pointer-events: none;
   transition: all 2 ease-in-out;
@@ -311,38 +298,35 @@ main {
 }
 
 .container-card {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-bottom: 30px; */
 }
-
-.card-int {
+.container-card .card-int {
   width: 20%;
   height: 60%;
   min-width: 310px;
   border-radius: 30px;
-  /* overflow: hidden; */
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
 }
-.card-int p {
+.container-card .card-int p {
   padding: 10px;
-  color: rgb(196, 237, 237);
+  color: rgb(172, 246, 242);
 }
-.card-int h3 {
-  color: rgb(196, 237, 237);
+.container-card .card-int h3 {
+  color: rgb(172, 246, 242);
 }
-.card-int:hover {
-  background-color: rgba(0, 0, 0, 0.55);
-  box-shadow: 0 0 20px #900048;
+.container-card .card-int:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
   transform: translateY(-15px);
-  size: 1.2;
+  size: 1.5;
 }
-.card-int img {
+.container-card .card-int img {
   width: 90%;
   height: 50%;
   padding-top: 10px;
@@ -351,86 +335,85 @@ main {
 
 .section-card {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-
-.card {
+.section-card .card {
   background-color: transparent;
   position: relative;
   width: 320px;
   height: 400px;
-  margin: 35px;
+  margin: 40px;
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.card .face {
+.section-card .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   transition: 0.7s;
 }
-.card .front {
+.section-card .card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7058823529);
 }
-.card .front img {
+.section-card .card .front img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card .front h3 {
+.section-card .card .front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: rgb(196, 237, 237);
+  color: rgb(172, 246, 242);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
-.card .back {
+.section-card .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.85);
   padding: 15px;
-  color: rgb(196, 237, 237);
+  color: rgb(172, 246, 242);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   box-shadow: 0, 5px, 10px #000;
 }
-.card .back .link {
+.section-card .card .back .link {
   border-top: solid 1px #f50a3d;
   height: 50px;
   line-height: 50px;
 }
-.card .back .link a {
+.section-card .card .back .link a {
   color: #f50a3d;
 }
-.card .back h3 {
+.section-card .card .back h3 {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
   letter-spacing: 2px;
 }
-.card .back p {
+.section-card .card .back p {
   letter-spacing: 1px;
+  font-size: 0.9rem;
 }
-
-.card:hover .front {
+.section-card .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
-
-.card:hover .back {
+.section-card .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
 
@@ -488,30 +471,31 @@ main {
     width: 100%;
   }
   .section-contenedor {
-    /* background-color: #004260; */
     width: 100%;
     height: 100%;
     margin-top: 0;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
   .article-text {
-    /* background-color: #1da1f2; */
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     text-align: center;
   }
-  .article-text h2 {
+  .article-text h1 {
     text-align: center;
-    color: #f50a3d;
+    /* color: map-get($paleta_de_colores, btn-red); */
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7058823529);
     font-size: 2rem;
     padding: 20px;
   }
   .article-text p {
     /* align-items: flex-start; */
-    color: rgb(196, 237, 237);
+    color: rgb(172, 246, 242);
     font-size: 1rem;
     padding: 10px 40px;
     text-align: center;
@@ -623,15 +607,15 @@ svg circle {
   margin-top: 5px;
 }
 .s-item h4 {
-  color: rgb(196, 237, 237);
+  color: rgb(172, 246, 242);
   text-align: center;
   font-size: 1rem;
 }
 
 .campo {
   padding: 13px 10px;
-  background-color: #737373;
-  color: #fff;
+  background-color: #565656;
+  color: #e2e2e2;
   outline: none;
   font-size: 1rem;
   margin: 0 5px 5px 0;

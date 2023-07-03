@@ -1,5 +1,5 @@
 .section-contenedor {
-  width: 100%;
+  @include ancho(100%);
   height: 100%;
   margin-top: 0;
   display: flex;
@@ -29,23 +29,12 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   color: map-get($paleta_de_colores, gris);
   font-size: 3rem;
   letter-spacing: 1rem;
   padding: 12px 0;
-  text-shadow: 2px 2px map-get($paleta_de_colores, negro);
-}
-
-.prince {
-  background-color: map-get($paleta_de_colores, purpura);
-  color: map-get($paleta_de_colores, blanco);
-  @include ancho(100%);
-  padding: 2rem 2rem;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  /* text-shadow: 2px 2px map-get($paleta_de_colores, negro); */
 }
 
 .menu a {
@@ -57,7 +46,7 @@
 
 .logo {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 6px;
 }
 
@@ -66,7 +55,6 @@
   align-items: center;
   justify-content: center;
 
-  /* background-color: #004260; */
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
 

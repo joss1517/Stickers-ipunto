@@ -1,11 +1,11 @@
 .d-block {
   @include ancho(800px);
-  border-radius: 35px;
+  border-radius: 40px;
 }
 
 .article-text p {
-  color: map-get($paleta_de_colores, text-card);
-  font-size: 1.3rem;
+  color: map-get($paleta_de_colores, text-card-2);
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 5px 40px;
   text-align: center;
@@ -13,17 +13,17 @@
 
 .article-text h2 {
   text-align: center;
-  color: map-get($paleta_de_colores, btn-red);
+  /* color: map-get($paleta_de_colores, btn-red); */
   font-size: 3.5rem;
   padding: 20px;
 }
 
 .text-t {
-  color: map-get($paleta_de_colores, text-card);
+  color: map-get($paleta_de_colores, text-card-2);
 }
 
 .text-t-p {
-  color: map-get($paleta_de_colores, blanco);
+  color: map-get($paleta_de_colores, text-card-2);
 }
 
 .text-t-red {
